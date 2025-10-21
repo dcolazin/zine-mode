@@ -4,7 +4,7 @@
 ;; Maintainer: Davide Colazingari <dcolazin@gmail.com>
 ;; URL: https://github.com/dcolazin/zine-mode
 ;; Version: 0.0.2
-;; Package-Requires: ((emacs "29.1") (reformatter "0.6") (css-mode) (js "9") (markdown-mode "2.8-alpha") (ziggy-mode "0.0.2"))
+;; Package-Requires: ((emacs "29.1") (reformatter "0.6") (markdown-mode "2.8-alpha") (ziggy-mode "0.0.2"))
 ;;
 ;; This file is NOT part of Emacs.
 ;;
@@ -355,6 +355,5 @@
 
 ;; Local Variables:
 ;; coding: utf-8
-;; byte-compile-warnings: (not obsolete)
 ;; End:
 ;;; zine-mode.el ends here
