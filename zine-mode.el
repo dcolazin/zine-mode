@@ -346,7 +346,9 @@
     (treesit-major-mode-setup)))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("\\.shtml\\'" . zine-superhtml-mode))
+(defun zine-override-auto-mode ()
+  "Makes zine-superhtml-mode the mode for '.shtml' files."
+  (add-to-list 'auto-mode-alist '("\\.shtml\\'" . zine-superhtml-mode)))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.smd\\'" . zine-supermd-mode))
