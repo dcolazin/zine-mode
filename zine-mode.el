@@ -320,10 +320,9 @@
                   (string attributes keyword definition)
                   (links variable operator selector property constant query string-interpolation assignment jsx number escape-sequence)
                   (bracket delimiter)))
-    (setq-local treesit-font-lock-settings (append zine-superhtml--treesit-font-lock-setting
-                                                   css--treesit-settings
-                                                   js--treesit-font-lock-settings))
-    (setq-local treesit-range-settings zine-superhtml--treesit-range-settings)
+     (setq-local treesit-font-lock-settings (append zine-superhtml--treesit-font-lock-setting
+                                                    css--treesit-settings
+                                                    (js--treesit-font-lock-settings)))
     (treesit-major-mode-setup)))
 
 ;;;###autoload
